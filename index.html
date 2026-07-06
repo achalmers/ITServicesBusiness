@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="NexaTech Solutions — Managed IT services built for startups and small businesses. Network setup, Microsoft 365, cybersecurity, help desk, and more." />
+  <title>NexaTech Solutions — Your IT Department, Without the Overhead</title>
+  <link rel="stylesheet" href="assets/css/styles.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+  <!-- ===================== NAVIGATION ===================== -->
+  <nav class="navbar" id="navbar">
+    <div class="container">
+      <div class="nav-inner">
+        <a href="index.html" class="nav-logo">
+          <span class="logo-icon">⚡</span>
+          <span>NexaTech Solutions</span>
+        </a>
+
+        <div class="nav-links">
+          <a href="services.html">Services</a>
+          <a href="about.html">About</a>
+          <a href="portal/index.php">Support Portal</a>
+          <a href="contact.html">Contact</a>
+        </div>
+
+        <div class="nav-cta">
+          <a href="contact.html" class="btn btn-primary">Get Started</a>
+        </div>
+
+        <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+
+      <div class="mobile-menu" id="mobile-menu">
+        <a href="services.html">Services</a>
+        <a href="about.html">About</a>
+        <a href="portal/index.php">Support Portal</a>
+        <a href="contact.html">Contact</a>
+        <a href="contact.html" class="btn btn-primary">Get Started</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- ===================== HERO ===================== -->
+  <section class="hero" id="hero">
+    <div class="container">
+      <div class="hero-content">
+        <div class="hero-badge">
+          <span class="status-dot"></span>
+          Serving startups &amp; small businesses
+        </div>
+        <h1>IT Support Built for<br /><span class="gradient-text">Startups</span></h1>
+        <p class="hero-sub">
+          Stop worrying about IT problems and focus on growing your business.
+          NexaTech Solutions delivers enterprise-grade IT support at a flat monthly rate —
+          no long contracts, no surprises.
+        </p>
+        <div class="hero-ctas">
+          <a href="services.html" class="btn btn-primary btn-lg">View Services</a>
+          <a href="portal/index.php" class="btn btn-outline btn-lg">Open Support Portal</a>
+        </div>
+      </div>
+
+      <!-- Floating tech elements -->
+      <div class="hero-float" aria-hidden="true">
+        <div class="float-card">
+          &gt; ping nexatech.local<br />
+          Reply from 10.0.0.1: bytes=32 time=1ms TTL=64<br />
+          <span style="color:var(--accent-green)">Status: Connected ✓</span>
+        </div>
+        <div class="float-card">
+          ✓ Microsoft 365 deployed (10 users)<br />
+          ✓ MFA enabled on all accounts<br />
+          ✓ Backup running — 99.9% uptime
+        </div>
+        <div class="float-card">
+          &gt; Ticket #1042 — RESOLVED<br />
+          Response time: 47 minutes<br />
+          <span style="color:var(--accent-green)">SLA: Met ✓</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== STATS ===================== -->
+  <section class="stats-row">
+    <div class="container">
+      <div class="stats-grid">
+        <div class="stat-item animate-on-scroll">
+          <h3><span data-count="50" data-suffix="+">50+</span></h3>
+          <p>Happy Clients &amp; Growing</p>
+        </div>
+        <div class="stat-item animate-on-scroll delay-2">
+          <h3>&lt;2 hr</h3>
+          <p>Average Response Time</p>
+        </div>
+        <div class="stat-item animate-on-scroll delay-3">
+          <h3><span data-count="99.9" data-suffix="%">99.9%</span></h3>
+          <p>Uptime Guarantee</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== SERVICES GRID ===================== -->
+  <section class="section" id="services">
+    <div class="container">
+      <div class="section-header centered">
+        <div class="section-tag">What We Do</div>
+        <h2>Everything Your Business Needs</h2>
+        <p>From network setup to ongoing security monitoring — we handle it all so you can focus on what matters.</p>
+      </div>
+
+      <div class="services-grid">
+        <div class="service-card animate-on-scroll">
+          <div class="service-icon">🌐</div>
+          <h3>Network &amp; Infrastructure Setup</h3>
+          <p>Professional WiFi, cabling, switches, and routers configured for performance and security from day one.</p>
+          <a href="services.html#network" class="learn-more">Learn More</a>
+        </div>
+
+        <div class="service-card animate-on-scroll delay-1">
+          <div class="service-icon">☁️</div>
+          <h3>Microsoft 365 &amp; Cloud Onboarding</h3>
+          <p>Full setup of Email, Teams, SharePoint, and OneDrive so your team can collaborate from anywhere.</p>
+          <a href="services.html#cloud" class="learn-more">Learn More</a>
+        </div>
+
+        <div class="service-card animate-on-scroll delay-2">
+          <div class="service-icon">🔒</div>
+          <h3>Cybersecurity &amp; Compliance</h3>
+          <p>Antivirus, firewall management, MFA rollout, and regular security audits to keep you protected.</p>
+          <a href="services.html#security" class="learn-more">Learn More</a>
+        </div>
+
+        <div class="service-card animate-on-scroll">
+          <div class="service-icon">🎧</div>
+          <h3>Help Desk &amp; Remote Support</h3>
+          <p>Same-day response with both remote and on-site support available when your team needs help fast.</p>
+          <a href="services.html#helpdesk" class="learn-more">Learn More</a>
+        </div>
+
+        <div class="service-card animate-on-scroll delay-1">
+          <div class="service-icon">💾</div>
+          <h3>Data Backup &amp; Disaster Recovery</h3>
+          <p>Automated backups with cloud redundancy so your business data is always safe and recoverable.</p>
+          <a href="services.html#backup" class="learn-more">Learn More</a>
+        </div>
+
+        <div class="service-card animate-on-scroll delay-2">
+          <div class="service-icon">💻</div>
+          <h3>Hardware Procurement &amp; Setup</h3>
+          <p>Laptops, printers, and peripherals sourced, configured, and deployed — ready to use on day one.</p>
+          <a href="services.html#hardware" class="learn-more">Learn More</a>
+        </div>
+
+        <div class="service-card animate-on-scroll">
+          <div class="service-icon">🏠</div>
+          <h3>Remote Work Infrastructure</h3>
+          <p>VPN, remote desktop, and collaboration tools configured so your team can work from anywhere securely.</p>
+          <a href="services.html#remote" class="learn-more">Learn More</a>
+        </div>
+
+        <div class="service-card animate-on-scroll delay-1">
+          <div class="service-icon">📊</div>
+          <h3>IT Strategy &amp; Consulting</h3>
+          <p>Technology roadmapping, vendor selection, and budgeting to align your IT with your business goals.</p>
+          <a href="services.html#consulting" class="learn-more">Learn More</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== WHY NEXATECH ===================== -->
+  <section class="section" style="background: var(--bg-secondary);">
+    <div class="container">
+      <div class="section-header centered">
+        <div class="section-tag">Why NexaTech?</div>
+        <h2>IT Done Differently</h2>
+        <p>We built NexaTech specifically for growing startups who need real IT support without the enterprise price tag.</p>
+      </div>
+
+      <div class="features-grid">
+        <div class="feature-card animate-on-scroll">
+          <span class="feature-icon">📋</span>
+          <h4>No Long Contracts</h4>
+          <p>Month-to-month plans. Stay because we're great, not because you're locked in.</p>
+        </div>
+        <div class="feature-card animate-on-scroll delay-1">
+          <span class="feature-icon">💰</span>
+          <h4>Flat Monthly Rate</h4>
+          <p>Predictable pricing with no surprise bills. Budget your IT costs like any other subscription.</p>
+        </div>
+        <div class="feature-card animate-on-scroll delay-2">
+          <span class="feature-icon">📍</span>
+          <h4>Local + Remote</h4>
+          <p>On-site visits when needed, fast remote support when not. The best of both worlds.</p>
+        </div>
+        <div class="feature-card animate-on-scroll delay-3">
+          <span class="feature-icon">🚀</span>
+          <h4>Startup Specialists</h4>
+          <p>We understand startup pace. Fast deployments, scalable solutions, minimal disruption.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== PRICING ===================== -->
+  <section class="section" id="pricing">
+    <div class="container">
+      <div class="section-header centered">
+        <div class="section-tag">Pricing</div>
+        <h2>Simple, Transparent Pricing</h2>
+        <p>No hidden fees, no per-incident billing. Just flat-rate IT support that scales with your business.</p>
+      </div>
+
+      <div class="pricing-grid">
+        <!-- Starter -->
+        <div class="pricing-card animate-on-scroll">
+          <div class="pricing-tier">Starter</div>
+          <div class="pricing-price">$299<span>/mo</span></div>
+          <div class="pricing-subtitle">Up to 5 users — perfect for early-stage startups</div>
+          <ul class="pricing-features">
+            <li><span class="check">✓</span> Up to 5 users</li>
+            <li><span class="check">✓</span> Remote helpdesk support</li>
+            <li><span class="check">✓</span> 24/7 security monitoring</li>
+            <li><span class="check">✓</span> Cloud email setup (Microsoft 365)</li>
+            <li><span class="check">✓</span> Antivirus &amp; firewall management</li>
+            <li><span class="check">✓</span> Same-day response SLA</li>
+          </ul>
+          <a href="contact.html" class="btn btn-outline">Get Started</a>
+        </div>
+
+        <!-- Growth (Featured) -->
+        <div class="pricing-card featured animate-on-scroll delay-1">
+          <div class="pricing-badge">Most Popular</div>
+          <div class="pricing-tier">Growth</div>
+          <div class="pricing-price">$599<span>/mo</span></div>
+          <div class="pricing-subtitle">Up to 15 users — ideal for scaling teams</div>
+          <ul class="pricing-features">
+            <li><span class="check">✓</span> Everything in Starter</li>
+            <li><span class="check">✓</span> Up to 15 users</li>
+            <li><span class="check">✓</span> Monthly on-site visits</li>
+            <li><span class="check">✓</span> Backup management &amp; monitoring</li>
+            <li><span class="check">✓</span> Hardware support &amp; procurement</li>
+            <li><span class="check">✓</span> Priority response queue</li>
+            <li><span class="check">✓</span> Quarterly IT health reviews</li>
+          </ul>
+          <a href="contact.html" class="btn btn-primary">Get Started</a>
+        </div>
+
+        <!-- Enterprise -->
+        <div class="pricing-card animate-on-scroll delay-2">
+          <div class="pricing-tier">Enterprise</div>
+          <div class="pricing-price">Custom<span> pricing</span></div>
+          <div class="pricing-subtitle">Unlimited users — full IT department outsourcing</div>
+          <ul class="pricing-features">
+            <li><span class="check">✓</span> Everything in Growth</li>
+            <li><span class="check">✓</span> Unlimited users</li>
+            <li><span class="check">✓</span> Dedicated support line</li>
+            <li><span class="check">✓</span> Full IT department outsourcing</li>
+            <li><span class="check">✓</span> Compliance management</li>
+            <li><span class="check">✓</span> Weekly on-site availability</li>
+            <li><span class="check">✓</span> Custom SLA agreements</li>
+          </ul>
+          <a href="contact.html" class="btn btn-outline">Contact Us</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== HOW IT WORKS ===================== -->
+  <section class="section" style="background: var(--bg-secondary);">
+    <div class="container">
+      <div class="section-header centered">
+        <div class="section-tag">Process</div>
+        <h2>How It Works</h2>
+        <p>Getting started with NexaTech is simple. We'll have you protected and productive in no time.</p>
+      </div>
+
+      <div class="steps-grid">
+        <div class="step-card animate-on-scroll">
+          <div class="step-number">1</div>
+          <h3>Contact Us</h3>
+          <p>Reach out via our contact form or call us directly. We'll schedule a free 30-minute consultation to learn about your business and IT needs.</p>
+        </div>
+        <div class="step-card animate-on-scroll delay-2">
+          <div class="step-number">2</div>
+          <h3>We Assess Your Needs</h3>
+          <p>Our team performs a quick IT assessment of your current setup and creates a tailored plan that fits your team size, budget, and goals.</p>
+        </div>
+        <div class="step-card animate-on-scroll delay-3">
+          <div class="step-number">3</div>
+          <h3>Get Protected &amp; Productive</h3>
+          <p>We handle the setup, migration, and configuration. Your team gains access to our support portal and we're on call whenever you need us.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== CTA SECTION ===================== -->
+  <section class="section">
+    <div class="container">
+      <div class="cta-section animate-on-scroll">
+        <div class="section-tag" style="margin-bottom:16px;">Ready?</div>
+        <h2>Ready to Simplify Your IT?</h2>
+        <p>Join 50+ startups who trust NexaTech Solutions to keep their business running smoothly. Get a free consultation today.</p>
+        <div class="ctas">
+          <a href="contact.html" class="btn btn-primary btn-lg">Get in Touch</a>
+          <a href="services.html" class="btn btn-outline btn-lg">Explore Services</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== FOOTER ===================== -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="index.html" class="nav-logo">
+            <span class="logo-icon">⚡</span>
+            <span>NexaTech Solutions</span>
+          </a>
+          <p style="margin-top:12px;">Your IT Department, Without the Overhead. Flat-rate managed IT services built for startups and small businesses.</p>
+        </div>
+
+        <div class="footer-col">
+          <h4>Navigation</h4>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="portal/index.php">Support Portal</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Services</h4>
+          <ul>
+            <li><a href="services.html#network">Network Setup</a></li>
+            <li><a href="services.html#cloud">Microsoft 365</a></li>
+            <li><a href="services.html#security">Cybersecurity</a></li>
+            <li><a href="services.html#helpdesk">Help Desk</a></li>
+            <li><a href="services.html#backup">Data Backup</a></li>
+            <li><a href="services.html#hardware">Hardware</a></li>
+            <li><a href="services.html#remote">Remote Work</a></li>
+            <li><a href="services.html#consulting">Consulting</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Contact</h4>
+          <div class="footer-contact-item">
+            <span class="icon">👤</span>
+            <span>Alex Chalmers</span>
+          </div>
+          <div class="footer-contact-item">
+            <span class="icon">✉️</span>
+            <a href="mailto:alex.l.chalmers@gmail.com">alex.l.chalmers@gmail.com</a>
+          </div>
+          <div class="footer-contact-item">
+            <span class="icon">📞</span>
+            <a href="tel:+16077655410">(607) 765-5410</a>
+          </div>
+          <div class="footer-contact-item">
+            <span class="icon">🕐</span>
+            <span>Mon–Fri, 8am–6pm ET</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>&copy; 2025 NexaTech Solutions. All rights reserved.</p>
+        <div style="display:flex;gap:20px;">
+          <a href="#">Privacy Policy</a>
+          <a href="#">Terms of Service</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="assets/js/main.js?v=2"></script>
+</body>
+</html>

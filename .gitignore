@@ -1,0 +1,18 @@
+# Secrets — never commit real credentials
+includes/config.php
+
+# Runtime data
+/uploads/
+/logs/
+*.log
+
+# Diagnostic/scratch files used during development
+mail-debug-v2.php
+mail_test_works.php
+test-mail.php
+
+# OS / editor cruft
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
