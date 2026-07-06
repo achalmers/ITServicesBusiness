@@ -163,7 +163,7 @@ $username   = htmlspecialchars($_SESSION['admin_username']);
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Tickets — NexaTech Admin</title>
   <meta name="csrf-token" content="<?= $csrfToken ?>" />
-  <link rel="stylesheet" href="../assets/css/styles.css" />
+  <link rel="stylesheet" href="../assets/css/styles.css?v=3" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet" />
 </head>
@@ -186,6 +186,7 @@ $username   = htmlspecialchars($_SESSION['admin_username']);
     <nav class="sidebar-nav">
       <a href="dashboard.php"><span class="nav-icon">📊</span> Dashboard</a>
       <a href="tickets.php" class="active"><span class="nav-icon">🎫</span> Tickets</a>
+      <a href="leads.php"><span class="nav-icon">📩</span> Leads</a>
       <a href="customers.php"><span class="nav-icon">👥</span> Customers</a>
       <a href="help.php"><span class="nav-icon">📖</span> Manual</a>
     </nav>
@@ -428,6 +429,6 @@ $username   = htmlspecialchars($_SESSION['admin_username']);
   </main>
 </div>
 
-<script src="../assets/js/main.js"></script>
+<script src="../assets/js/main.js?v=3"></script>
 </body>
 </html>

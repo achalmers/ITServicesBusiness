@@ -70,7 +70,7 @@ if ($msgParam === 'logged_out') $success = 'You have been logged out successfull
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Customer Portal — NexaTech Solutions</title>
-  <link rel="stylesheet" href="../assets/css/styles.css" />
+  <link rel="stylesheet" href="../assets/css/styles.css?v=3" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet" />
 </head>
@@ -210,6 +210,6 @@ if ($msgParam === 'logged_out') $success = 'You have been logged out successfull
   </div>
 </div>
 
-<script src="../assets/js/main.js"></script>
+<script src="../assets/js/main.js?v=3"></script>
 </body>
 </html>

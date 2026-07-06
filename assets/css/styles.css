@@ -944,6 +944,8 @@ table.data-table { width: 100%; border-collapse: collapse; }
 .badge-pending { background: rgba(251,191,36,.12); color: #fbbf24; border: 1px solid rgba(251,191,36,.25); }
 .badge-inactive{ background: rgba(100,116,139,.12); color: #64748b; border: 1px solid rgba(100,116,139,.25); }
 .badge-new     { background: rgba(0,212,255,.15); color: var(--accent-cyan); border: 1px solid rgba(0,212,255,.3); }
+.badge-contacted { background: rgba(251,191,36,.15); color: #fbbf24; border: 1px solid rgba(251,191,36,.3); }
+.badge-converted { background: rgba(0,255,136,.15); color: var(--accent-green); border: 1px solid rgba(0,255,136,.3); }
 .badge-starter { background: rgba(148,163,184,.1); color: #94a3b8; border: 1px solid rgba(148,163,184,.2); }
 .badge-growth  { background: rgba(0,212,255,.1); color: var(--accent-cyan); border: 1px solid rgba(0,212,255,.2); }
 .badge-enterprise { background: rgba(0,255,136,.1); color: var(--accent-green); border: 1px solid rgba(0,255,136,.2); }
