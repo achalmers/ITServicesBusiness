@@ -268,6 +268,23 @@
     });
   }
 
+  /* ---- Admin: generic "toggle add-X form" buttons ---- */
+  function wireToggleForm(formId, toggleId, cancelId) {
+    const form = document.getElementById(formId);
+    const toggleBtn = document.getElementById(toggleId);
+    const cancelBtn = document.getElementById(cancelId);
+    if (form && toggleBtn) toggleBtn.addEventListener('click', () => form.classList.toggle('hidden'));
+    if (form && cancelBtn) cancelBtn.addEventListener('click', () => form.classList.add('hidden'));
+  }
+  wireToggleForm('add-customer-form', 'toggle-add-customer', 'cancel-add-customer');
+  wireToggleForm('add-admin-form', 'toggle-add-admin', 'cancel-add-admin');
+
+  /* ---- Admin: print checklist button ---- */
+  const printChecklist = document.getElementById('print-checklist');
+  if (printChecklist) {
+    printChecklist.addEventListener('click', () => window.print());
+  }
+
   /* ---- Admin: dashboard charts (dependency-free canvas rendering) ---- */
   const chartPalette = ['#00d4ff', '#00ff88', '#fbbf24', '#ff6b6b', '#a78bfa', '#f472b6', '#38bdf8', '#facc15'];
   const cssVar = name => getComputedStyle(document.documentElement).getPropertyValue(name).trim();

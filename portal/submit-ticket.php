@@ -274,6 +274,6 @@ $initials  = strtoupper(substr($customer['first_name'], 0, 1) . substr($customer
     </div>
   </main>
 </div>
-<script src="../assets/js/main.js?v=3"></script>
+<script src="../assets/js/main.js?v=6"></script>
 </body>
 </html>

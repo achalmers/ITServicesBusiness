@@ -106,6 +106,8 @@ $username = htmlspecialchars($_SESSION['admin_username']);
       <a href="tickets.php"><span class="nav-icon">🎫</span> Tickets</a>
       <a href="leads.php"><span class="nav-icon">📩</span> Leads</a>
       <a href="customers.php"><span class="nav-icon">👥</span> Customers</a>
+      <a href="staff.php"><span class="nav-icon">🔑</span> Staff</a>
+      <a href="automation-setup.php"><span class="nav-icon">🤖</span> New Client Setup</a>
       <a href="help.php"><span class="nav-icon">📖</span> Manual</a>
     </nav>
     <div class="sidebar-footer">
@@ -279,6 +281,6 @@ $username = htmlspecialchars($_SESSION['admin_username']);
     </div>
   </main>
 </div>
-<script src="../assets/js/main.js?v=3"></script>
+<script src="../assets/js/main.js?v=6"></script>
 </body>
 </html>

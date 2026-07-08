@@ -48,6 +48,8 @@ $username = htmlspecialchars($_SESSION['admin_username']);
       <a href="tickets.php"><span class="nav-icon">🎫</span> Tickets</a>
       <a href="leads.php"><span class="nav-icon">📩</span> Leads</a>
       <a href="customers.php"><span class="nav-icon">👥</span> Customers</a>
+      <a href="staff.php"><span class="nav-icon">🔑</span> Staff</a>
+      <a href="automation-setup.php"><span class="nav-icon">🤖</span> New Client Setup</a>
       <a href="help.php" class="active"><span class="nav-icon">📖</span> Manual</a>
     </nav>
     <div class="sidebar-footer">
@@ -144,10 +146,46 @@ $username = htmlspecialchars($_SESSION['admin_username']);
         </div>
       </div>
 
+      <div class="card">
+        <div class="card-header"><h3>👤 Adding a New Customer (Portal User)</h3></div>
+        <div class="card-body">
+          <p>From <strong>Customers</strong>, click <strong>+ Add Customer</strong> in the top right. This opens a form for:</p>
+          <ul style="margin-left:20px;line-height:1.8;">
+            <li><strong>First/Last Name, Email *</strong> — required.</li>
+            <li><strong>Phone, Company</strong> — optional.</li>
+            <li><strong>Plan</strong> — None / Starter ($299/mo) / Growth ($599/mo) / Enterprise (custom).</li>
+            <li><strong>Temporary Password *</strong> — required; this is what the customer uses to log in to the portal. Share it with them securely and ask them to change it after their first login (there's no forced password-change flow yet, so this relies on the admin telling them to).</li>
+          </ul>
+          <p style="margin-top:8px;">The account is created immediately with <strong>Active</strong> status — the customer can log in to the portal right away with the email and temporary password. No welcome/confirmation email is sent automatically today, so let them know directly.</p>
+          <p class="alert alert-info" style="margin-top:12px;">
+            <strong>💡 Suggested for next version:</strong> Auto-generate a secure temporary password instead of typing one in by hand, and send it to the customer by email automatically (similar to how ticket notifications already work) rather than relying on the admin to relay it out-of-band.
+          </p>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="card-header"><h3>🔑 Adding a New Admin/Staff User</h3></div>
+        <div class="card-body">
+          <p>From <strong>Staff</strong>, click <strong>+ Add Admin User</strong>. This opens a form for:</p>
+          <ul style="margin-left:20px;line-height:1.8;">
+            <li><strong>Username, Email *</strong> — both must be unique; you'll get an error if either is already taken.</li>
+            <li><strong>Role *</strong> — <span class="badge badge-medium">Technician</span> or <span class="badge badge-high">Admin</span>.</li>
+            <li><strong>Temporary Password *</strong> — minimum 8 characters; share it with the new hire securely, since there's no forced password-change flow or automatic welcome email yet (same limitation as adding customers).</li>
+          </ul>
+          <p style="margin-top:8px;">The account can log in to <code>/admin/index.php</code> immediately after creation.</p>
+          <p class="alert alert-info" style="margin-top:12px;">
+            <strong>⚠️ Role is currently cosmetic.</strong> <code>Technician</code> vs. <code>Admin</code> is stored and displayed, but nothing in this panel actually restricts what a Technician can do — every logged-in staff account has full access to every page, including creating <em>other</em> Admin accounts. Treat every account you create here as fully privileged until real role-based permissions are built.
+          </p>
+          <p class="alert alert-info" style="margin-top:12px;">
+            <strong>💡 Suggested for next version:</strong> Enforce the role distinction for real (e.g. restrict Technicians from Staff/billing-sensitive pages), add the ability to deactivate a staff account (no "inactive" state exists in the database yet — today the only way to remove access is deleting the row directly), and auto-generate + email temporary passwords instead of typing them by hand.
+          </p>
+        </div>
+      </div>
+
     </div>
   </main>
 </div>
 
-<script src="../assets/js/main.js?v=3"></script>
+<script src="../assets/js/main.js?v=6"></script>
 </body>
 </html>

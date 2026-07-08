@@ -208,6 +208,6 @@ $plan        = ucfirst($customer['plan'] ?? 'none');
   </main>
 
 </div><!-- /app-layout -->
-<script src="../assets/js/main.js?v=3"></script>
+<script src="../assets/js/main.js?v=6"></script>
 </body>
 </html>

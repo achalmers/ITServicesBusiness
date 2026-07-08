@@ -150,6 +150,8 @@ $username  = htmlspecialchars($_SESSION['admin_username']);
       <a href="tickets.php"><span class="nav-icon">🎫</span> Tickets</a>
       <a href="leads.php"><span class="nav-icon">📩</span> Leads</a>
       <a href="customers.php" class="active"><span class="nav-icon">👥</span> Customers</a>
+      <a href="staff.php"><span class="nav-icon">🔑</span> Staff</a>
+      <a href="automation-setup.php"><span class="nav-icon">🤖</span> New Client Setup</a>
       <a href="help.php"><span class="nav-icon">📖</span> Manual</a>
     </nav>
     <div class="sidebar-footer"><a href="logout.php"><span>🚪</span> Log Out</a></div>
@@ -163,7 +165,7 @@ $username  = htmlspecialchars($_SESSION['admin_username']);
           <a href="customers.php" class="btn btn-ghost btn-sm">← All Customers</a>
         <?php else: ?>
           <a href="customers.php?export=csv" class="btn btn-ghost btn-sm">⬇ Export CSV</a>
-          <button onclick="document.getElementById('add-customer-form').classList.toggle('hidden')" class="btn btn-primary btn-sm">+ Add Customer</button>
+          <button type="button" id="toggle-add-customer" class="btn btn-primary btn-sm">+ Add Customer</button>
         <?php endif; ?>
       </div>
     </div>
@@ -292,7 +294,7 @@ $username  = htmlspecialchars($_SESSION['admin_username']);
         <div class="card hidden" id="add-customer-form" style="margin-bottom:24px;">
           <div class="card-header">
             <h3>➕ Add New Customer</h3>
-            <button onclick="document.getElementById('add-customer-form').classList.add('hidden')" class="btn btn-ghost btn-sm">Cancel</button>
+            <button type="button" id="cancel-add-customer" class="btn btn-ghost btn-sm">Cancel</button>
           </div>
           <div class="card-body">
             <form method="POST" action="customers.php">
@@ -395,6 +397,6 @@ $username  = htmlspecialchars($_SESSION['admin_username']);
     </div>
   </main>
 </div>
-<script src="../assets/js/main.js?v=3"></script>
+<script src="../assets/js/main.js?v=6"></script>
 </body>
 </html>

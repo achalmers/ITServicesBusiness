@@ -248,6 +248,6 @@ $replied    = isset($_GET['replied']);
     </div>
   </main>
 </div>
-<script src="../assets/js/main.js?v=3"></script>
+<script src="../assets/js/main.js?v=6"></script>
 </body>
 </html>
