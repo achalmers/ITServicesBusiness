@@ -72,6 +72,18 @@
     }
   });
 
+  /* ---- Analytics: phone/email link clicks (no-op on pages without gtag loaded) ---- */
+  document.querySelectorAll('a[href^="tel:"]').forEach(link => {
+    link.addEventListener('click', () => {
+      if (typeof gtag === 'function') gtag('event', 'phone_click');
+    });
+  });
+  document.querySelectorAll('a[href^="mailto:"]').forEach(link => {
+    link.addEventListener('click', () => {
+      if (typeof gtag === 'function') gtag('event', 'email_click');
+    });
+  });
+
   /* ---- Stat counter animation ---- */
   const statEls = document.querySelectorAll('[data-count]');
   if (statEls.length) {
@@ -145,7 +157,10 @@
             ? (data.message || 'Message sent! We\'ll be in touch within 2 business hours.')
             : (data.error || 'Something went wrong. Please try again.');
         }
-        if (data.success) this.reset();
+        if (data.success) {
+          this.reset();
+          if (typeof gtag === 'function') gtag('event', 'generate_lead');
+        }
       } catch (err) {
         if (msgEl) {
           msgEl.className = 'alert alert-error';
@@ -192,6 +207,7 @@
         }
         if (data.success) {
           this.reset();
+          if (typeof gtag === 'function') gtag('event', 'sign_up');
           // Switch to login tab
           setTimeout(() => {
             const loginTab = document.querySelector('.auth-tab[data-tab=login]');

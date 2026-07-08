@@ -186,6 +186,6 @@ $username = htmlspecialchars($_SESSION['admin_username']);
   </main>
 </div>
 
-<script src="../assets/js/main.js?v=6"></script>
+<script src="../assets/js/main.js?v=7"></script>
 </body>
 </html>

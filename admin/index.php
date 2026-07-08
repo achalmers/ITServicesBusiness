@@ -122,6 +122,6 @@ $success   = ($msgParam === 'logged_out') ? 'You have been logged out.' : '';
   </div>
 </div>
 
-<script src="../assets/js/main.js?v=6"></script>
+<script src="../assets/js/main.js?v=7"></script>
 </body>
 </html>
